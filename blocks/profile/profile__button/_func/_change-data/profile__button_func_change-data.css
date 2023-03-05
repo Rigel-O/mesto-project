@@ -1,0 +1,24 @@
+.profile__button_func_change-data {
+  background: url(../../../../../images/EditButton.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;  
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.profile__button_func_change-data:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__button_func_change-data {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+    position: absolute;
+    top: 8px;
+    left: 86.88%;
+  }
+}

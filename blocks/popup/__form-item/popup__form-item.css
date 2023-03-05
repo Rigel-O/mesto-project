@@ -1,0 +1,14 @@
+.popup__form-item {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+}
+
+.popup__form-item::placeholder {
+  color: rgba(0, 0, 0, .6);
+}
