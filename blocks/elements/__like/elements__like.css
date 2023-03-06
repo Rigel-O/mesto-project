@@ -6,28 +6,12 @@
   background-repeat: no-repeat;
   transition: opacity .2s linear;
   opacity: 1;
-  display: block;
   width: 22px;
   height: 19px;
   cursor: pointer;
+  border: none;
 }
 
 .elements__like:hover {
   opacity: .5;
 }
-
-.elements__like::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../../../images/like_black.svg);
-  width: 22px;
-  height: 19px;
-  opacity: 0;
-}
-
-.elements__checkbox:checked + .elements__like::before {
-  opacity: 1;
-}
-

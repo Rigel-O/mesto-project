@@ -7,9 +7,5 @@
   line-height: 17px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
-  box-sizing: border-box;
-}
-
-.popup__form-item::placeholder {
-  color: rgba(0, 0, 0, .6);
+  color: #000000;
 }

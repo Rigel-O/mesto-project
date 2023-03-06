@@ -4,37 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Rigel">
-  <title>Mesto</title>
+  <title lang="en">Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
 <header class="header">
-  <img src="./images/logo.svg" alt="MESTO Russia" class="logo">
+  <img src="./images/logo.svg" alt="Логотип проекта Место" class="logo">
 </header>
 <main class="content">
   <section class="profile">
     <div class="profile__card">
-      <img src="./images/avatar.jpg" alt="avatar" class="profile__avatar">
+      <img src="./images/avatar.jpg" alt="Аватар профиля" class="profile__avatar">
       <div class="profile__data">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button type="button" onclick="window.popup.showModal();" class="profile__button profile__button_func_change-data"></button>
-          <dialog id="popup" class="popup">
-            <button class="popup__close-button" type="button" onclick="window.popup.close();"></button>
-            <form class="popup__container">
-              <h2 class="popup__heading">Редактировать профиль</h2>
-              <fieldset class="popup__input-container"> 
-                <input type="text" class="popup__form-item" placeholder="Имя" value="Жак Ив Кусто">
-                <input type="text" class="popup__form-item" placeholder="Вид деятельности" value="Исследователь океана">
-              </fieldset>
-              <fieldset class="popup__button-container">
-                <input type="submit" class="popup__submit-button" value="Сохранить">
-              </fieldset>
-            </form>
-          </dialog>
+          <button type="button" class="profile__button profile__button_change-data" aria-label="кнопка открытия модального окна редактирования профиля"></button>
           <p class="profile__prof">Исследователь океана</p>
       </div>
     </div>
-    <button class="profile__button profile__button_func_add-image"><img src="./images/cross.svg" alt="Крестик"></button>
+    <button class="profile__button profile__button_add-image" aria-label="кнопка открытия модального окна добавления карточки"></button>
   </section>
   <section class="elements" aria-label="Фотографии">
     <ul class="elements__list">
@@ -42,67 +29,60 @@
         <img src="./images/Karachaevo.jpg" alt="Карачаевск" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Карачаевск</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like" value="like"class="elements__checkbox">
-            <label for="like" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
       <li class="elements__card">
         <img src="./images/Elbrus.jpg" alt="Гора Эльбрус" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Гора Эльбрус</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like-a" value="like"class="elements__checkbox">
-            <label for="like-a" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
       <li class="elements__card">
         <img src="./images/Dombai.jpg" alt="Домбай" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Домбай</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like-b" value="like"class="elements__checkbox">
-            <label for="like-b" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
       <li class="elements__card">
         <img src="./images/Elbrus.jpg" alt="Гора Эльбрус" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Гора Эльбрус</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like-c" value="like"class="elements__checkbox">
-            <label for="like-c" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
       <li class="elements__card">
         <img src="./images/Dombai.jpg" alt="Домбай" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Домбай</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like-d" value="like"class="elements__checkbox">
-            <label for="like-d" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
       <li class="elements__card">
         <img src="./images/Karachaevo.jpg" alt="Карачаевск" class="elements__image">
         <div class="elements__description">
           <h2 class="elements__name">Карачаево-Черкесия</h2>
-          <form class="elements__like-checkbox">
-            <input type="checkbox" name="like" id="like-e" value="like"class="elements__checkbox">
-            <label for="like-e" class="elements__like"></label>
-          </form>
+          <button type="button" class="elements__like elements__like_active" aria-label="Кнопка лайка"></button>
         </div>
       </li>
     </ul>
   </section>
 </main>
 <footer class="footer">
-  <p class="footer__copyright">© 2023 Mesto Russia</p>
+  <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
 </footer>
+ <div class="popup popup_open">
+  <div class="popup__container">
+    <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
+    <h2 class="popup__heading">Редактировать профиль</h2>
+    <form name="profile" class="popup__input-container">
+      <input type="text" class="popup__form-item popup__form-item_type_name" placeholder="Имя" name="inputName" value="Жак Ив Кусто">
+      <input type="text" class="popup__form-item popup__form-item_type_prof" placeholder="Вид деятельности" name="inputProf" value="Исследователь океана">
+    </form> 
+    <button type="button" class="popup__submit-button" aria-label="Отправить форму">Сохранить</button>
+  </div>
+</div>
 </body>
 </html>

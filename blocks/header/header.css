@@ -1,7 +1,7 @@
 .header {
   margin: 45px auto 0;
+  padding-bottom: 41px;
   border-bottom: 1px solid rgba(84, 84, 84, .7);
-  min-height: 74px;
   max-width: calc(100% - 400px);
 }
 
@@ -9,6 +9,6 @@
   .header {
     max-width: 100%;
     margin-top: 28px;
-    min-height: 56px;
+    padding-bottom: 31.6px;
   }
 }

@@ -1,24 +1,27 @@
-.profile__button_func_change-data {
-  background: url(../../../../../images/EditButton.svg);
+.profile__button_change-data {
+  background: url(../../../../images/EditButton.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 10px 10px;
+  background-position: center;
   width: 24px;
   height: 24px;  
   transition: opacity .2s linear;
   opacity: 1;
+  border: 1px solid #FFFFFF;
 }
 
-.profile__button_func_change-data:hover {
+.profile__button_change-data:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 767px) {
-  .profile__button_func_change-data {
+  .profile__button_change-data {
     width: 18px;
     height: 18px;
     align-self: center;
     position: absolute;
     top: 8px;
     left: 86.88%;
+    background-size: 7.5px 7.5px;
   }
 }
