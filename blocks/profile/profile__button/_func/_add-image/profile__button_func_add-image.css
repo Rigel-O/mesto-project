@@ -1,23 +1,23 @@
-.profile__button_add-image {
+.profile__button_func_add-image {
   border: 2px solid #FFFFFF;
   border-radius: 2px;
   width: 150px;
   height: 50px;
   transition: opacity .2s linear;
   opacity: 1;
-  background-image: url(../../../../images/cross.svg);
+  background-image: url(../../../../../images/cross.svg);
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;
   flex-shrink: 0;
 }
 
-.profile__button_add-image:hover {
+.profile__button_func_add-image:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 767px) {
-  .profile__button_add-image {
+  .profile__button_func_add-image {
     width: 282px;
     margin-top: 36px;
     background-size: 16px 16px;

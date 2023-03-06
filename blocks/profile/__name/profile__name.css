@@ -2,7 +2,7 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 48px;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -14,5 +14,8 @@
   .profile__name {
   font-size: 27px;
   line-height: 33px;
+  max-width: 67%;
+  margin-right: auto;
+  margin-left: auto;
   }
 }

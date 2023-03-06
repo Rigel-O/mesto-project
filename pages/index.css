@@ -32,9 +32,9 @@
 
 @import url(../blocks/profile/profile__button/profile__button.css);
 
-@import url(../blocks/profile/profile__button/_change-data/profile__button_change-data.css);
+@import url(../blocks/profile/profile__button/_func/_add-image/profile__button_func_add-image.css);
 
-@import url(../blocks/profile/profile__button/_add-image/profile__button_add-image.css);
+@import url(../blocks/profile/profile__button/_func/_change-data/profile__button_func_change-data.css);
 
 /*elements*/
 
@@ -64,7 +64,7 @@
 
 @import url(../blocks/popup/popup.css);
 
-@import url(../blocks/popup/_open/popup_open.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
 
 @import url(../blocks/popup/__container/popup__container.css);
 

@@ -1,5 +1,5 @@
-.profile__button_change-data {
-  background: url(../../../../images/EditButton.svg);
+.profile__button_func_change-data {
+  background: url(../../../../../images/EditButton.svg);
   background-repeat: no-repeat;
   background-size: 10px 10px;
   background-position: center;
@@ -10,12 +10,12 @@
   border: 1px solid #FFFFFF;
 }
 
-.profile__button_change-data:hover {
+.profile__button_func_change-data:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 767px) {
-  .profile__button_change-data {
+  .profile__button_func_change-data {
     width: 18px;
     height: 18px;
     align-self: center;
