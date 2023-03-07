@@ -32,9 +32,9 @@
 
 @import url(../blocks/profile/profile__button/profile__button.css);
 
-@import url(../blocks/profile/profile__button/_func/_add-image/profile__button_func_add-image.css);
+@import url(../blocks/profile/profile__button/_func/profile__button_func_add-image.css);
 
-@import url(../blocks/profile/profile__button/_func/_change-data/profile__button_func_change-data.css);
+@import url(../blocks/profile/profile__button/_func/profile__button_func_change-data.css);
 
 /*elements*/
 
