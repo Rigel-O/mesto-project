@@ -16,4 +16,5 @@ https://rigel-o.github.io/mesto-project/
 Кнопки подготовлены для добавления скриптов.
 
 ## Технологии
-В проекте используются: flex, grid-layout.
+В  проекте используются: flex, grid-layout.
+
