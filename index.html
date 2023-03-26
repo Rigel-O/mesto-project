@@ -95,13 +95,23 @@
       <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
       <h2 class="popup__heading">Новое место</h2>
       <form name="profile" class="popup__input-container">
-        <input type="text" class="popup__form-item popup__form-item_type_name" placeholder="Название" name="inputName" value="">
-        <input type="text" class="popup__form-item popup__form-item_type_prof" placeholder="Ссылка на картинку" name="inputProf" value="">
+        <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Название" name="inputName" value="">
+        <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Ссылка на картинку" name="inputProf" value="">
       </form> 
       <button type="submit" class="popup__submit-button">Сохранить</button>
     </div>
   </div>
 </div>
-<script src="./script.js"></script>
+<template id="cardTemplate"> 
+  <li class="elements__card">
+    <img class="elements__image">
+    <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
+    <div class="elements__description">
+      <h2 class="elements__name"></h2>
+      <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
+    </div>
+  </li>
+</template>
+<script src="./scripts/script.js"></script>
 </body>
 </html>
