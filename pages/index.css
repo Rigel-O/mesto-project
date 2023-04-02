@@ -62,7 +62,7 @@
 
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
-/*popup-data*/
+/*popups*/
 
 @import url(../blocks/popup/popup.css);
 
@@ -79,3 +79,9 @@
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
 
 @import url(../blocks/popup/__close-button/popup__close-button.css);
+
+@import url(../blocks/popup/__image-container/popup__image-container.css);
+
+@import url(../blocks/popup/__image/popup__image.css);
+
+@import url(../blocks/popup/__caption/popup__caption.css);

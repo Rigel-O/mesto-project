@@ -25,83 +25,42 @@
   </section>
   <section class="elements" aria-label="Фотографии">
     <ul class="elements__list">
-      <li class="elements__card">
-        <img src="./images/Karachaevo.jpg" alt="Карачаевск" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Карачаевск</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
-      <li class="elements__card">
-        <img src="./images/Elbrus.jpg" alt="Гора Эльбрус" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Гора Эльбрус</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
-      <li class="elements__card">
-        <img src="./images/Dombai.jpg" alt="Домбай" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Домбай</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
-      <li class="elements__card">
-        <img src="./images/Elbrus.jpg" alt="Гора Эльбрус" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Гора Эльбрус</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
-      <li class="elements__card">
-        <img src="./images/Dombai.jpg" alt="Домбай" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Домбай</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
-      <li class="elements__card">
-        <img src="./images/Karachaevo.jpg" alt="Карачаевск" class="elements__image">
-        <button type="button" class="elements__trash" aria-label="Кнопка корзина"></button>
-        <div class="elements__description">
-          <h2 class="elements__name">Карачаево-Черкесия</h2>
-          <button type="button" class="elements__like" aria-label="Кнопка лайка"></button>
-        </div>
-      </li>
+      
     </ul>
   </section>
 </main>
 <footer class="footer">
   <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
 </footer>
- <div class="popup popup_profile">
+ <div class="popup">
   <div class="popup__container">
     <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
     <h2 class="popup__heading">Редактировать профиль</h2>
     <form name="profile" class="popup__input-container">
-      <input type="text" class="popup__form-item popup__form-item_type_name" placeholder="Имя" name="inputName" value="">
-      <input type="text" class="popup__form-item popup__form-item_type_prof" placeholder="Вид деятельности" name="inputProf" value="">
-    </form> 
-    <button type="submit" class="popup__submit-button">Сохранить</button>
+      <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Имя" name="inputName">
+      <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Вид деятельности" name="inputProf">
+      <button type="submit" class="popup__submit-button">Сохранить</button>
+    </form>
   </div>
  </div>
-  <div class="popup popup_new-card">
+  <div class="popup popup_profile">
     <div class="popup__container">
       <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
       <h2 class="popup__heading">Новое место</h2>
       <form name="profile" class="popup__input-container">
-        <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Название" name="inputName" value="">
-        <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Ссылка на картинку" name="inputProf" value="">
-      </form> 
-      <button type="submit" class="popup__submit-button">Сохранить</button>
+        <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Название" name="inputName">
+        <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Ссылка на картинку" name="inputProf"> 
+        <button type="submit" class="popup__submit-button">Создать</button>
+      </form>
     </div>
   </div>
-</div>
+  <div class="popup">      
+      <figure class="popup__image-container">
+        <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
+        <img class="popup__image">
+        <figcaption class="popup__caption"></figcaption>
+      </figure>
+  </div>
 <template id="cardTemplate"> 
   <li class="elements__card">
     <img class="elements__image">
