@@ -32,29 +32,29 @@
 <footer class="footer">
   <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
 </footer>
- <div class="popup">
+ <div class="popup popup_profile">
   <div class="popup__container">
     <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
     <h2 class="popup__heading">Редактировать профиль</h2>
-    <form name="profile" class="popup__input-container">
-      <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Имя" name="inputName">
-      <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Вид деятельности" name="inputProf">
+    <form name="profile" class="popup__input-container popup__input-container_profile">
+      <input type="text" class="popup__form-item popup__form-item_profile-name" placeholder="Имя" name="inputName">
+      <input type="text" class="popup__form-item popup__form-item_profile-job" placeholder="Вид деятельности" name="inputProf">
       <button type="submit" class="popup__submit-button">Сохранить</button>
     </form>
   </div>
  </div>
-  <div class="popup popup_profile">
+  <div class="popup popup_new-card">
     <div class="popup__container">
       <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
       <h2 class="popup__heading">Новое место</h2>
-      <form name="profile" class="popup__input-container">
-        <input type="text" class="popup__form-item popup__form-item_type_first" placeholder="Название" name="inputName">
-        <input type="text" class="popup__form-item popup__form-item_type_second" placeholder="Ссылка на картинку" name="inputProf"> 
+      <form name="profile" class="popup__input-container popup__input-container_card">
+        <input type="text" class="popup__form-item popup__form-item_card-name" placeholder="Название" name="inputName">
+        <input type="text" class="popup__form-item popup__form-item_card-src" placeholder="Ссылка на картинку" name="inputProf"> 
         <button type="submit" class="popup__submit-button">Создать</button>
       </form>
     </div>
   </div>
-  <div class="popup">      
+  <div class="popup popup_image">      
       <figure class="popup__image-container">
         <button class="popup__close-button" type="button" aria-label="Кнопка закрытия модального окна"></button>
         <img class="popup__image">
@@ -71,6 +71,7 @@
     </div>
   </li>
 </template>
-<script src="./scripts/script.js"></script>
+<script src="./scripts/cards.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 </html>

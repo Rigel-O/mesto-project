@@ -1,7 +1,5 @@
 .popup__image-container {
     margin: 0;
-    max-width:75vh;
-    max-height:75vh;
     background-color: transparent;
     position: relative;
   }
