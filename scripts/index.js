@@ -79,9 +79,9 @@ function createCard (cardName, cardSrc) {
 
 // edit profile
 
-function profileEdit (firstFormValue, secondFormValue) {
-	profileName.textContent = firstFormValue;
-	profession.textContent = secondFormValue;
+function profileEdit (name, job) {
+	profileName.textContent = name;
+	profession.textContent = job;
 };
 
 //form card submit
@@ -91,7 +91,7 @@ cardForm.addEventListener ('submit', function (evt) {
 	renderCard(cardNameForm.value, cardSrcForm.value);
 	cardNameForm.value = '';
 	cardSrcForm.value = '';
-	closePopup(cardForm.closest('.popup'));
+	closePopup(cardPopup);
 });
 
 //form profile submit
@@ -99,7 +99,7 @@ cardForm.addEventListener ('submit', function (evt) {
 profileForm.addEventListener ('submit', function (evt) {
 	evt.preventDefault();
 	profileEdit(profileNameForm.value, profileJobForm.value);
-	closePopup(profileForm.closest('.popup'));
+	closePopup(profilePopup);
 });
 
 //initial cards
